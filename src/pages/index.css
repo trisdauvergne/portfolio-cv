@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+/* font-family: 'Ubuntu Mono', monospace; */
+/* font-family: 'Tomorrow', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Tomorrow', sans-serif;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px black solid;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.sub-heading {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.strong-text {
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Ubuntu Mono', monospace;
+}
