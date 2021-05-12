@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import './projects.css';
+import Project from '../../components/project/Project';
 
 const Projects = ({ projects }) => {
-  // console.log('from projects.js', projects);
   const [caseStudies, setCaseStudies] = useState([]);
+  const [projectsDivVisible, setProjectsDivVisible] = useState(false);
 
   useEffect(() => {
     setCaseStudies(projects);
-    console.log(caseStudies);
+    // console.log('in projects.js useeffect', caseStudies);
   });
 
   return (
     <section className="projects content-section">
-      <h1 className="heading projects__heading">Projects</h1>
-      {caseStudies.length === 0 ? <p>Nothing to see here</p> : <p>There's something just can't get it out yet</p>}
-      {caseStudies.length > 0 && caseStudies.allContentfulProject}
+      <div className="projects__heading-div" onClick={() => setProjectsDivVisible(!projectsDivVisible)}>
+        <h1 className="heading projects__heading">Projects</h1>
+      </div>
+      <div className="projects__div">
+        {projectsDivVisible && caseStudies.map(caseStudy => <Project project={caseStudy.node}/>)}
+      </div>
     </section>
   )
 }
