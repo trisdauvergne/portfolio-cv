@@ -8,7 +8,6 @@ const Projects = ({ projects }) => {
 
   useEffect(() => {
     setCaseStudies(projects);
-    // console.log('in projects.js useeffect', caseStudies);
   });
 
   return (
@@ -17,7 +16,7 @@ const Projects = ({ projects }) => {
         <h1 className="heading projects__heading">Projects</h1>
       </div>
       <div className="projects__div">
-        {projectsDivVisible && caseStudies.map(caseStudy => <Project project={caseStudy.node}/>)}
+        {projectsDivVisible && caseStudies.map((caseStudy, index) => <Project key={index} project={caseStudy.node}/>)}
       </div>
     </section>
   )
