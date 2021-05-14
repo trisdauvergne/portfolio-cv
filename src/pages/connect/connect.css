@@ -1,14 +1,14 @@
-/* .cv {
+/* .connect {
   display: flex;
   flex-direction: column;
 } */
 
-/* .cv-section {
+/* .connections {
   width: 100vw;
 } */
 
 @media only screen and (min-width: 768px) {
-  .cv-heading:hover {
-    background-color: #ffbe0b;
+  .content-heading:hover {
+    background-color:#3a86ff;
   }
 }

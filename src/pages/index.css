@@ -3,29 +3,42 @@
 /* font-family: 'Ubuntu Mono', monospace; */
 /* font-family: 'Tomorrow', sans-serif; */
 
+/* 
+yellow: ffbe0b
+orange: fb5607
+pink: ff006e
+purple: 8338ec
+blue: 3a86ff
+*/
 * {
   margin: 0;
   padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: left; */
 }
 
 h1, h2, h3, h5 {
   font-family: 'Tomorrow', sans-serif;
 }
 
-.content-section {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px black solid;
-  /* max-height: 20vh; */
+.heading-div {
+  height: 20vh;
+  border-bottom: 1px solid black;
+}
+
+.heading-div__reduced {
+  height: 10vh;
 }
 
 .heading {
+  /* padding-top: 6vh; */
   font-size: 2.5rem;
   font-weight: 500;
-}
-
-.heading-div {
-  width: 100%;
 }
 
 .sub-heading {
@@ -44,4 +57,8 @@ p, a {
 a {
   font-weight: 700;
   color: black;
+}
+
+.bottom-border {
+  border-bottom: 1px solid black;
 }

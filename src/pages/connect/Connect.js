@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
+import './connect.css';
 
 const Connect = () => {
+  const [visibleConnections, setVisibleConnections] = useState(false);
   return (
-    <section className="content-section">
-      <h1 className="heading">Connect</h1>
+    <section className="connect content-section">
+      <div className={visibleConnections ? "content-heading heading-div__reduced": "heading-div content-heading"}>
+        <h1 onClick={() => setVisibleConnections(!visibleConnections)} className="heading">Connect</h1>
+      </div>
+      {visibleConnections && <div className="connections">
+        <h2 className="sub-heading">LinkedIn</h2>
+        <h2 className="sub-heading">GitHub</h2>
+        <h2 className="sub-heading">Email</h2></div>}
     </section>
   )
 }

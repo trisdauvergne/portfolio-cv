@@ -12,10 +12,10 @@ const Projects = ({ projects }) => {
 
   return (
     <section className="projects content-section">
-      <div className="heading-div" onClick={() => setProjectsDivVisible(!projectsDivVisible)}>
-        <h1 className="heading projects__heading">Projects</h1>
+      <div className={projectsDivVisible ? "projects-heading heading-div__reduced": "heading-div projects-heading"} onClick={() => setProjectsDivVisible(!projectsDivVisible)}>
+        <h1 className="heading">Projects</h1>
       </div>
-      <div className="projects__div">
+      <div className="projects__div bottom-border">
         {projectsDivVisible && caseStudies.map((caseStudy, index) => <Project key={index} project={caseStudy.node}/>)}
       </div>
     </section>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './about.css';
 
 const About = () => {
   const [visibleAboutText, setVisibleAboutText] = useState(false);
@@ -6,15 +7,17 @@ const About = () => {
   const [visibleTechnicalSkills, setVisibleTechnicalSkills] = useState(false);
 
   return (
-    <section>
-      <div onClick={() => setVisibleAboutText(!visibleAboutText)} className="about content-section">
+    <section className="content-section">
+      <div onClick={() => setVisibleAboutText(!visibleAboutText)} className={visibleAboutText ? "about-heading heading-div__reduced":"about-heading heading-div"}>
         <h1 className="heading about__heading">About</h1>
       </div>
-      {visibleAboutText && <div className="text-section about__summary">
-        <h2 onClick={() => setVisibleSummary(!visibleSummary)} className="sub-heading">Summary</h2>
+      {visibleAboutText &&
+      <div className="text-section bottom-border">
+        <h2 onClick={() => setVisibleSummary(!visibleSummary)} className="sub-heading about__summary">Summary</h2>
         {visibleSummary && <p>A former design project manager from London, now reborn as a developer living in Stockholm. I decided to pursue a career as a developer to help organisations create meaningful online experiences for their customers. A lover of food, music and good design.</p>}
         <h2 onClick={() => setVisibleTechnicalSkills(!visibleTechnicalSkills)} className="sub-heading">Technical Skills</h2>
-        {visibleTechnicalSkills && <div>
+        {visibleTechnicalSkills &&
+        <div>
           <p className="strong-text">General</p>
           <p>JavaScript</p>
           <br/>

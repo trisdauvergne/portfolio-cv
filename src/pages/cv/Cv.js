@@ -8,11 +8,11 @@ const Cv = () => {
 
   return (
     <section className="cv content-section">
-      <div onClick={() => setVisibleCvSections(!visibleCvSections)} className="heading-div">
-        <h1 className="heading cv__heading">CV</h1>
+      <div onClick={() => setVisibleCvSections(!visibleCvSections)} className={visibleCvSections ? "cv-heading heading-div__reduced" : "cv-heading heading-div"}>
+        <h1 className="heading">CV</h1>
       </div>
       {visibleCvSections && <div className="cv-section education">
-        <h3 onClick={() => setVisibleEducation(!visibleEducation)}>Education & Training</h3>
+        <h2 className="sub-heading" onClick={() => setVisibleEducation(!visibleEducation)}>Education & Training</h2>
         {visibleEducation && <div>
           <h5>Full Stack JavaScript</h5>
           <p>School of Applied Technology</p>
@@ -28,8 +28,8 @@ const Cv = () => {
           <p>Designing for all aspects of live performance</p>
         </div>}
       </div>}
-      {visibleCvSections && <div className="cv-section work-experience">
-        <h3 onClick={() => setVisibleWork(!visibleWork)}>Work Experience</h3>
+      {visibleCvSections && <div className="cv-section work-experience bottom-border">
+        <h2 className="sub-heading" onClick={() => setVisibleWork(!visibleWork)}>Work Experience</h2>
         {visibleWork && <div>
           <h5>Full Stack JavaScript Consultant</h5>
           <p>School of Applied Technology</p>
