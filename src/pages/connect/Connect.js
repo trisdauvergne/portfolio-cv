@@ -5,7 +5,7 @@ const Connect = () => {
   const [visibleConnections, setVisibleConnections] = useState(false);
   return (
     <section className="connect content-section">
-      <div className="heading-div">
+      <div className={visibleConnections ? "content-heading heading-div__reduced": "heading-div content-heading"}>
         <h1 onClick={() => setVisibleConnections(!visibleConnections)} className="heading">Connect</h1>
       </div>
       {visibleConnections && <div className="connections">

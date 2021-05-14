@@ -3,6 +3,13 @@
 /* font-family: 'Ubuntu Mono', monospace; */
 /* font-family: 'Tomorrow', sans-serif; */
 
+/* 
+yellow: ffbe0b
+orange: fb5607
+pink: ff006e
+purple: 8338ec
+blue: 3a86ff
+*/
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +31,12 @@ h1, h2, h3, h5 {
   border-bottom: 1px solid black;
 }
 
+.heading-div__reduced {
+  height: 10vh;
+}
+
 .heading {
-  padding-top: 6vh;
+  /* padding-top: 6vh; */
   font-size: 2.5rem;
   font-weight: 500;
 }

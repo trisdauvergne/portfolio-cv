@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <section className="content-section">
-      <div onClick={() => setVisibleAboutText(!visibleAboutText)} className="heading-div">
+      <div onClick={() => setVisibleAboutText(!visibleAboutText)} className={visibleAboutText ? "about-heading heading-div__reduced":"about-heading heading-div"}>
         <h1 className="heading about__heading">About</h1>
       </div>
       {visibleAboutText &&

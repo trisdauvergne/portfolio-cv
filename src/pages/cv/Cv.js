@@ -8,8 +8,8 @@ const Cv = () => {
 
   return (
     <section className="cv content-section">
-      <div onClick={() => setVisibleCvSections(!visibleCvSections)} className="heading-div">
-        <h1 className="heading cv__heading">CV</h1>
+      <div onClick={() => setVisibleCvSections(!visibleCvSections)} className={visibleCvSections ? "cv-heading heading-div__reduced" : "cv-heading heading-div"}>
+        <h1 className="heading">CV</h1>
       </div>
       {visibleCvSections && <div className="cv-section education">
         <h2 className="sub-heading" onClick={() => setVisibleEducation(!visibleEducation)}>Education & Training</h2>

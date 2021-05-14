@@ -6,3 +6,9 @@
 /* .cv-section {
   width: 100vw;
 } */
+
+@media only screen and (min-width: 768px) {
+  .cv-heading:hover {
+    background-color: #ffbe0b;
+  }
+}
