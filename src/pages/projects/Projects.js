@@ -12,7 +12,7 @@ const Projects = ({ projects }) => {
 
   return (
     <section className="projects content-section">
-      <div className="projects__heading-div" onClick={() => setProjectsDivVisible(!projectsDivVisible)}>
+      <div className="heading-div" onClick={() => setProjectsDivVisible(!projectsDivVisible)}>
         <h1 className="heading projects__heading">Projects</h1>
       </div>
       <div className="projects__div">
