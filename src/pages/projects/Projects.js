@@ -15,7 +15,7 @@ const Projects = ({ projects }) => {
       <div className="heading-div" onClick={() => setProjectsDivVisible(!projectsDivVisible)}>
         <h1 className="heading projects__heading">Projects</h1>
       </div>
-      <div className="projects__div">
+      <div className="projects__div bottom-border">
         {projectsDivVisible && caseStudies.map((caseStudy, index) => <Project key={index} project={caseStudy.node}/>)}
       </div>
     </section>

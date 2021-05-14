@@ -28,7 +28,7 @@ const Cv = () => {
           <p>Designing for all aspects of live performance</p>
         </div>}
       </div>}
-      {visibleCvSections && <div className="cv-section work-experience">
+      {visibleCvSections && <div className="cv-section work-experience bottom-border">
         <h2 className="sub-heading" onClick={() => setVisibleWork(!visibleWork)}>Work Experience</h2>
         {visibleWork && <div>
           <h5>Full Stack JavaScript Consultant</h5>
