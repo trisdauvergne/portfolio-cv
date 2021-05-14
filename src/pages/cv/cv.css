@@ -1,4 +1,8 @@
-.projects {
+.cv {
   display: flex;
   flex-direction: column;
+}
+
+.cv-section {
+  width: 100vw;
 }

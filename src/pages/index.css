@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-h1, h2 {
+h1, h2, h3, h5 {
   font-family: 'Tomorrow', sans-serif;
 }
 
@@ -16,11 +16,16 @@ h1, h2 {
   display: flex;
   align-items: center;
   border-bottom: 1px black solid;
+  /* max-height: 20vh; */
 }
 
 .heading {
   font-size: 2.5rem;
   font-weight: 500;
+}
+
+.heading-div {
+  width: 100%;
 }
 
 .sub-heading {
@@ -32,6 +37,11 @@ h1, h2 {
   font-weight: 700;
 }
 
-p {
+p, a {
   font-family: 'Ubuntu Mono', monospace;
+}
+
+a {
+  font-weight: 700;
+  color: black;
 }
