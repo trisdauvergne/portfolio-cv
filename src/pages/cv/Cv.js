@@ -12,7 +12,7 @@ const Cv = () => {
         <h1 className="heading cv__heading">CV</h1>
       </div>
       {visibleCvSections && <div className="cv-section education">
-        <h3 onClick={() => setVisibleEducation(!visibleEducation)}>Education & Training</h3>
+        <h2 className="sub-heading" onClick={() => setVisibleEducation(!visibleEducation)}>Education & Training</h2>
         {visibleEducation && <div>
           <h5>Full Stack JavaScript</h5>
           <p>School of Applied Technology</p>
@@ -29,7 +29,7 @@ const Cv = () => {
         </div>}
       </div>}
       {visibleCvSections && <div className="cv-section work-experience">
-        <h3 onClick={() => setVisibleWork(!visibleWork)}>Work Experience</h3>
+        <h2 className="sub-heading" onClick={() => setVisibleWork(!visibleWork)}>Work Experience</h2>
         {visibleWork && <div>
           <h5>Full Stack JavaScript Consultant</h5>
           <p>School of Applied Technology</p>

@@ -6,8 +6,8 @@ const Project = ({ project }) => {
   console.log('in project.js', project);
 
   return (
-    <section className="project"  onClick={() => setProjectInfoVisible(!projectInfoVisible)} onMouseLeave={() => setProjectInfoVisible(!projectInfoVisible)}>
-      <h2 className="project-title">{project.projectTitle}</h2>
+    <section className="project" onClick={() => setProjectInfoVisible(!projectInfoVisible)} onMouseLeave={() => setProjectInfoVisible(!projectInfoVisible)}>
+      <h2 className="sub-heading">{project.projectTitle}</h2>
       {projectInfoVisible && <div>
         <p>{project.projectDescription.projectDescription}</p>
         <p>{project.deployedLink}</p>

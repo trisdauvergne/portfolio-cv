@@ -9,9 +9,9 @@ const Connect = () => {
         <h1 onClick={() => setVisibleConnections(!visibleConnections)} className="heading">Connect</h1>
       </div>
       {visibleConnections && <div className="connections">
-        <h3>LinkedIn</h3>
-        <h3>GitHub</h3>
-        <h3>Email</h3></div>}
+        <h2 className="sub-heading">LinkedIn</h2>
+        <h2 className="sub-heading">GitHub</h2>
+        <h2 className="sub-heading">Email</h2></div>}
     </section>
   )
 }

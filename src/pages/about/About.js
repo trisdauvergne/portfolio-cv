@@ -6,8 +6,8 @@ const About = () => {
   const [visibleTechnicalSkills, setVisibleTechnicalSkills] = useState(false);
 
   return (
-    <section>
-      <div onClick={() => setVisibleAboutText(!visibleAboutText)} className="about content-section">
+    <section className="content-section">
+      <div onClick={() => setVisibleAboutText(!visibleAboutText)} className="heading-div">
         <h1 className="heading about__heading">About</h1>
       </div>
       {visibleAboutText && <div className="text-section about__summary">

@@ -14,18 +14,14 @@ h1, h2, h3, h5 {
 
 .content-section {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   border-bottom: 1px black solid;
-  /* max-height: 20vh; */
 }
 
 .heading {
   font-size: 2.5rem;
   font-weight: 500;
-}
-
-.heading-div {
-  width: 100%;
 }
 
 .sub-heading {
