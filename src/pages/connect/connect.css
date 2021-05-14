@@ -1,0 +1,8 @@
+.connect {
+  display: flex;
+  flex-direction: column;
+}
+
+.connections {
+  width: 100vw;
+}
