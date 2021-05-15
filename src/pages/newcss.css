@@ -39,3 +39,16 @@ button {
   border-radius: 20px;
   /* padding: 0 1rem; */
 }
+
+.heading {
+  font-weight: 500;
+  font-size: 2.75rem;
+  /* font-style: italic; */
+}
+
+.sub-heading {
+  font-style: italic;
+  font-size: 2.75rem;
+  font-weight: 300;
+  text-align: center;
+}

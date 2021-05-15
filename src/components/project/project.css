@@ -1,3 +1,20 @@
 /* .project {
   width: 100vw;
 } */
+.project {
+  border: 1px solid black;
+}
+
+.project-btns {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.deploy-btn {
+  max-width: 10rem;
+}
+
+.source-btn {
+  max-width: 8rem;
+}

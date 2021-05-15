@@ -12,7 +12,7 @@ const Projects = ({ projects }) => {
   return (
     <section className="projects content-section">
       <div>
-        <h1 className="heading">Projects test</h1>
+        <h1 className="heading">Deployed projects</h1>
       </div>
       <div>
         {caseStudies.map((caseStudy, index) => <Project key={index} project={caseStudy.node}/>)}
