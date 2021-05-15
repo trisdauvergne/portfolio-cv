@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* font-family: 'Chivo', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+/* font-family: 'Yantramanav', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Gothic A1', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+/* font-family: 'Almarai', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* font-family: 'Work Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* font-family: 'Manrope', sans-serif; */
+
+body {
+  background-color: #fefefa;
+}
+
+h1, h3, button {
+  font-family: 'Chivo', sans-serif;
+}
+
+p {
+  font-family: 'Chivo', sans-serif;
+}
+
+button {
+  background-color: #fefefa;
+  border-radius: 20px;
+  /* padding: 0 1rem; */
+}

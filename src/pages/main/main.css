@@ -1,0 +1,32 @@
+.floating-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.floating-btn {
+  position: fixed;
+  z-index: 10;
+  margin-bottom: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.floating-btn--about {
+  top: 10px;
+  max-width: 5rem;
+}
+
+.floating-btn--work {
+  top: 40px;
+  max-width: 4.4rem;
+}
+
+.floating-btn--cv {
+  top: 70px;
+  max-width: 3.5rem;
+}
+
+.floating-btn--connect {
+  bottom: 0px;
+  max-width: 6rem;
+}
