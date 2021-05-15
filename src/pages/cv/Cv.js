@@ -2,15 +2,33 @@ import React, { useState } from 'react';
 import './cv.css';
 
 const Cv = () => {
-  // const [visibleCvSections, setVisibleCvSections] = useState(false);
-  // const [visibleEducation, setVisibleEducation] = useState(false);
-  // const [visibleWork, setVisibleWork] = useState(false);
+  const [visibleEducation, setVisibleEducation] = useState(false);
+  const [visibleWorkExperience, setVisibleWorkExperience] = useState(false);
+  const [visibleTechnicalSkills, setVisibleTechnicalSkills] = useState(false);
+
+  const visibleEducationSection = () => {
+    setVisibleEducation(!visibleEducation);
+    setVisibleWorkExperience(false);
+    setVisibleTechnicalSkills(false);
+  };
+
+  const visibleWorkSection = () => {
+    setVisibleWorkExperience(!visibleWorkExperience);
+    setVisibleEducation(false);
+    setVisibleTechnicalSkills(false);
+  }
+
+  const visibleTechnicalSection = () => {
+    setVisibleTechnicalSkills(!visibleTechnicalSkills);
+    setVisibleWorkExperience(false);
+    setVisibleEducation(false);
+  }
 
   return (
     <section>
       <h1 className="heading">CV</h1>
-      <h2>Education & Training</h2>
-      <div>
+      <h3 onClick={visibleEducationSection} className="heading">Education & Training +</h3>
+      {visibleEducation && <div>
         <h5>Full Stack JavaScript</h5>
         <p>School of Applied Technology</p>
         <p>January 2021 - April 2021</p>
@@ -23,9 +41,9 @@ const Cv = () => {
         <p>University of the Arts, London</p>
         <p>September 2004 - July 2007</p>
         <p>Designing for all aspects of live performance</p>
-      </div>
-      <h2>Work Experience</h2>
-      <div>
+      </div>}
+      <h3 onClick={visibleWorkSection} className="heading">Work Experience +</h3>
+      {visibleWorkExperience && <div>
         <h5>Full Stack JavaScript Consultant</h5>
         <p>School of Applied Technology</p>
         <p>April 2021 - Present</p>
@@ -38,7 +56,37 @@ const Cv = () => {
         <p>Conran Design Group, London</p>
         <p>January 2016 - July 2017</p>
         <p>Managed Shell’s online ‘Retail Brand Check Service’ ensuring the brand was represented consistently at retail sites around the world </p>
-      </div>
+      </div>}
+      <h3 onClick={visibleTechnicalSection} className="heading">Technical Skills +</h3>
+      {visibleTechnicalSkills && <div className="technical-skills">
+        <p>General</p>
+        <p>JavaScript</p>
+        <br/>
+        <p>Frontend</p>
+        <p>React</p>
+        <p>Redux</p>
+        <p>Webpack</p>
+        <p>HTML</p>
+        <p>CSS / SASS / styled-components</p>
+        <br/>
+        <p>Backend</p>
+        <p>NodeJS</p>
+        <p>Express</p>
+        <p>REST</p>
+        <p>GraphQL</p>
+        <p>MongoDB / PostgreSQL</p>
+        <br/>
+        <p>Tools and technologies</p>
+        <p>Visual Studio Code</p>
+        <p>Handlebars / Mustache</p>
+        <p>Mocha / Jest</p>
+        <p>Docker</p>
+        <p>Git + GitHub</p>
+        <p>AWS</p>
+        <p>Cloud Platforms (MongoDB Atlas, ElephantSQL, Netlify, Heroku, Contentful)</p>
+        <p>TDD</p>
+        <p>Agile Work Methods</p>
+      </div>}
     </section>
   )
 }
