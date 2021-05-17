@@ -6,23 +6,47 @@
   font-family: 'Chivo', sans-serif;
   margin-left: 3rem;
   font-weight: 200;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: -2px;
+  border: 3px dashed black;
+  border-radius: 50px;
 }
 
 .connect-option:hover {
-  color:black;
-  font-family: 'Yantramanav', sans-serif;
-  font-weight: 800;
+  background-color: black;
+  border: 3px dashed #fffff4;
+}
+
+.connect-option--linkedin {
+  text-align: center;
+  width: 16rem;
+}
+
+.connect-option--github {
+  text-align: center;
+  width: 14rem
+}
+
+.connect-option--email {
+  text-align: center;
+  width: 12rem
 }
 
 @media only screen and (min-width: 768px) {
-  .connections {
-    display: flex;
-  }
-  
   .connect-option {
     font-size: 4.25rem;
     font-weight: 300;
+  }
+
+  .connect-option--linkedin {
+    width: 23rem;
+  }
+  
+  .connect-option--github {
+    width: 20rem
+  }
+  
+  .connect-option--email {
+    width: 17.5rem
   }
 }

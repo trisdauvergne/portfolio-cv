@@ -1,9 +1,35 @@
 .cv-heading {
-  margin-left: 3rem;
+  /* margin-left: 2rem; */
   text-transform: uppercase;
   font-weight: 300;
   font-size: 3rem;
   letter-spacing: -2px;
+}
+
+.cv-txt {
+  max-width: 425px;
+  line-height: 1rem;
+  margin: 2rem 0.5rem 3rem 1rem;
+}
+
+.cv-div {
+  width: 100vw;
+  border-bottom: 1px solid black;
+}
+
+.cv-sub-heading {
+  font-weight: 500;
+  letter-spacing: -2px;
+  font-size: 2rem;
+}
+
+.cv-details {
+  font-weight: 400;
+  text-align: left;
+}
+
+.cv-copy {
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 768px) {
@@ -11,4 +37,10 @@
     font-size: 4.5rem;
     font-weight: 300;
   }
+
+  .cv-txt {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  };
 }

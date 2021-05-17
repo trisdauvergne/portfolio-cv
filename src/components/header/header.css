@@ -20,13 +20,13 @@
   position: fixed;
   right: 0px;
   margin-right: 0.25rem;
-  border: 3px dashed black;
+  border: 1px solid black;
 }
 
 .floating-btn:hover {
   background-color: black;
   color: #fffff4;
-  border: 3px dashed #fffff4;
+  border: 1px solid #fffff4;
 }
 
 .floating-btn--about {
@@ -45,8 +45,10 @@
 }
 
 .floating-btn--connect {
-  bottom: 10px;
+  bottom: 60px;
+  right: -50px;
   width: 5.5rem;
+  transform: rotate(90deg);
 }
 
 @media only screen and (max-width: 768px) {
@@ -60,7 +62,12 @@
     position: fixed;
     right: 0px;
     margin-right: 0.25rem;
-    border: 2px dashed black;
+    border: 1px solid black;
+  }
+
+  .floating-btn--connect {
+    right: -30px;
+    bottom: 40px;
   }
 }
 
@@ -86,6 +93,8 @@
   
   .floating-btn--connect {
     width: 8rem;
+    right: -50px;
+    bottom: 60px;
   }
 
 }
