@@ -76,34 +76,23 @@ const Cv = () => {
         </div>
       </div>}
       <h3 onClick={visibleTechnicalSection} className="cv-heading">Technical Skills +</h3>
-      {visibleTechnicalSkills && <div className="cv-txt">
-        <p>General</p>
-        <p>JavaScript</p>
-        <br/>
-        <p>Frontend</p>
-        <p>React</p>
-        <p>Redux</p>
-        <p>Webpack</p>
-        <p>HTML</p>
-        <p>CSS / SASS / styled-components</p>
-        <br/>
-        <p>Backend</p>
-        <p>NodeJS</p>
-        <p>Express</p>
-        <p>REST</p>
-        <p>GraphQL</p>
-        <p>MongoDB / PostgreSQL</p>
-        <br/>
-        <p>Tools and technologies</p>
-        <p>Visual Studio Code</p>
-        <p>Handlebars / Mustache</p>
-        <p>Mocha / Jest</p>
-        <p>Docker</p>
-        <p>Git + GitHub</p>
-        <p>AWS</p>
-        <p>Cloud Platforms (MongoDB Atlas, ElephantSQL, Netlify, Heroku, Contentful)</p>
-        <p>TDD</p>
-        <p>Agile Work Methods</p>
+      {visibleTechnicalSkills &&<div className="cv-div">
+        <div className="cv-txt">
+          <p className="cv-sub-heading">General</p>
+          <p className="cv-copy">JavaScript</p>
+        </div>
+        <div className="cv-txt">
+          <p className="cv-sub-heading">Frontend</p>
+          <p className="cv-copy">React, Redux, Webpack, HTML, CSS / SASS / styled-components</p>
+        </div>
+        <div className="cv-txt">
+          <p className="cv-sub-heading">Backend</p>
+          <p className="cv-copy">NodeJS, Express, REST, GraphQL, MongoDB / PostgreSQL</p>
+        </div>
+        <div className="cv-txt">
+          <p className="cv-sub-heading">Tools and technologies</p>
+          <p className="cv-copy">Visual Studio Code, Handlebars / Mustache, Mocha / Jest, Docker, Git + GitHub, AWS, Cloud Platforms (MongoDB Atlas, ElephantSQL, Netlify, Heroku, Contentful), TDD,Agile Work Methods</p>
+        </div>
       </div>}
     </section>
   )
