@@ -25,7 +25,7 @@ const Cv = () => {
   }
 
   return (
-    <section>
+    <section className="section">
       <h1 className="heading">CV</h1>
       <h3 onClick={visibleEducationSection} className="heading cv-heading">Education & Training +</h3>
       {visibleEducation && <div>

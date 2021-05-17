@@ -1,8 +1,20 @@
-/* .project {
+.project-section {
   width: 100vw;
-} */
-.project {
+  border-top: 1px solid black;
   border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.project {
+  margin: auto;
+  border: 1px solid red;
+}
+
+.project-content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
 }
 
 .project-btns {
@@ -17,4 +29,19 @@
 
 .source-btn {
   max-width: 8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .project {
+    width: 768px;
+  }
+
+  .sub-heading {
+    font-size: 4.3vw;
+    text-align: justify;
+  }
+
+  .project-content {
+    width: 425px;
+  }
 }

@@ -1,4 +1,4 @@
-.floating-btns {
+/* .floating-btns {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -9,6 +9,7 @@
   z-index: 10;
   margin-bottom: 0.5rem;
   margin-right: 0.25rem;
+  border: 1px dashed black;
 }
 
 .floating-btn--about {
@@ -29,4 +30,16 @@
 .floating-btn--connect {
   bottom: 0px;
   max-width: 6rem;
-}
+} */
+
+/* @media only screen and (min-width: 1024px) {
+  .floating-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .floating-btn {
+    position: initial;
+  }
+} */

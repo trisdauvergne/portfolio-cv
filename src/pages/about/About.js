@@ -5,8 +5,8 @@ const About = () => {
 
   return (
     <section className="section about-section">
-      <h3 className="heading">I am Tristan.</h3>
-      <p>I am a former design project manager from London reborn as a developer living in Stockholm. I decided to pursue a career as a developer to help organisations create meaningful online experiences for their customers. A lover of food, music and good design.</p>
+      <h3 className="heading about__heading">I am Tristan.</h3>
+      <p className="txt--centred about__txt">A former design project manager from London turned developer, living in Stockholm. I decided to pursue a career as a developer to help organisations create meaningful online experiences for their customers. A lover of food, music and good design.</p>
     </section>
   )
 }

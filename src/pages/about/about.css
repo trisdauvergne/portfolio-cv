@@ -1,5 +1,18 @@
-/* @media only screen and (min-width: 768px) {
-  .about-heading:hover {
-    background-color: #ff006e;
+@media only screen and (min-width: 768px) {
+  .about__heading:hover {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    z-index: 11;
   }
-} */
+
+  .about__txt {
+    max-width: 425px;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+.about__txt {
+  margin: 0 1rem 0 2rem;
+  text-align: justify;
+}

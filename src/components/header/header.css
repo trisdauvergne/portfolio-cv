@@ -1,15 +1,58 @@
 .header {
   display: flex;
-  align-items: flex-start;
-}
-
-@media only screen and (max-width: 768px) {
-  .header {
-    width: 320px;
-  }
+  max-width: 320px;
 }
 
 .header__txt {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 300;
+  align-self: flex-start;
+}
+
+.floating-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.floating-btn {
+  position: fixed;
+  right: 0px;
+  margin-right: 0.25rem;
+  border: 3px dashed black;
+}
+
+.floating-btn--about {
+  top: 10px;
+  width: 4.5rem;
+}
+
+.floating-btn--work {
+  top: 50px;
+  width: 6rem;
+}
+
+.floating-btn--cv {
+  top: 90px;
+  width: 3rem;
+}
+
+.floating-btn--connect {
+  bottom: 10px;
+  width: 5.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .floating-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .floating-btn {
+    position: fixed;
+    right: 0px;
+    margin-right: 0.25rem;
+    border: 1px dashed black;
+  }
 }
