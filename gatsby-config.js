@@ -42,5 +42,13 @@ module.exports = {
           accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'material icons',
+        ],
+      },
+    },
   ],
 }

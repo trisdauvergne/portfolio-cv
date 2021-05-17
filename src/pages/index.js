@@ -1,21 +1,13 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import Header from '../components/header/Header';
-import About from './about/About';
-import Projects from './projects/Projects';
-import Cv from './cv/Cv';
-import Connect from './connect/Connect';
-import './index.css';
+import Main from './main/Main';
+import './newcss.css';
 
 const IndexPage = ({ data }) => {
-  console.log(data.allContentfulProject.edges, 'from index.js')
+  console.log('from index.js', data.allContentfulProject.edges)
   return (
   <div className="App">
-    <Header />
-    <About />
-    <Projects projects={data.allContentfulProject.edges}/>
-    <Cv />
-    <Connect />
+    <Main projects={data.allContentfulProject.edges}/>
   </div>
   )
 }
@@ -30,7 +22,9 @@ export const query = graphql`query MyQuery {
         projectDescription {
           projectDescription
         }
+        toolsAndLanguages
         deployedLink
+        sourceCode
       }
     }
   }

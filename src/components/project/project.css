@@ -1,3 +1,66 @@
-/* .project {
+.project-section {
   width: 100vw;
-} */
+  margin-bottom: 3rem;
+}
+
+.project {
+  margin: auto;
+}
+
+.project-heading {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: -6px;
+}
+
+.project-content {
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 0 2rem;
+  line-height: 1rem;
+}
+
+.project-btns {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.project-btn {
+  border: 3px dashed black;
+  padding: 0.4rem 0.5rem;
+}
+
+.project-btn:hover {
+  background-color: black;
+  border: 3px dashed #fffff4;
+}
+
+.deploy-btn {
+  width: 11.5rem;
+  margin-bottom: 1rem;
+}
+
+.source-btn {
+  width: 9.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .project {
+    width: 768px;
+  }
+
+  .project-heading {
+    font-size: 6rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .project-content {
+    margin: auto;
+    width: 425px;
+  }
+}
