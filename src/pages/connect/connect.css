@@ -17,10 +17,10 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .connections {
+  /* .connections {
     display: flex;
   }
-  
+   */
   .connect-option {
     font-size: 4.25rem;
     font-weight: 300;
