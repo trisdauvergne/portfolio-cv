@@ -2,7 +2,7 @@
   width: 100vw;
 } */
 .project {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .project-btns {
