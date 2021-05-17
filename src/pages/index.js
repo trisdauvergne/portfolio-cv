@@ -34,7 +34,9 @@ export const query = graphql`query MyQuery {
         projectDescription {
           projectDescription
         }
+        toolsAndLanguages
         deployedLink
+        sourceCode
       }
     }
   }
