@@ -27,10 +27,7 @@
 /* font-family: 'IBM Plex Mono', monospace; */
 
 body {
-  background-color: #fefefa;
-  /* max-width: 1024px;
-  margin: auto; */
-
+  background-color: #fffff4;
 }
 
 h1, h3, button {
@@ -40,12 +37,34 @@ h1, h3, button {
 p {
   font-family: 'Almarai', sans-serif;
   font-weight: 400;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 button {
-  background-color: #fefefa;
+  background-color: #fffff4;
   border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #fffff4;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  vertical-align: middle;
+}
+
+.lrg-icon {
+  font-size: 2.5rem;
+}
+
+.small-icon {
+  font-size: 1.25rem;
 }
 
 .heading {
@@ -53,16 +72,8 @@ button {
   font-size: 3rem;
 }
 
-.sub-heading {
-  text-transform: uppercase;
-  font-size: 4.3rem;
-  font-weight: 300;
-  text-align: left;
-  letter-spacing: -5px;
-}
-
 .section {
-  margin-bottom: 2rem;
+  margin-top: 6rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -70,12 +81,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .sub-heading {
-    font-size: 6rem;
-    font-weight: 300;
-    text-align: center;
   }
 
   .txt--centred {

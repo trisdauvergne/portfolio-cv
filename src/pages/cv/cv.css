@@ -1,23 +1,8 @@
-/* .cv {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .cv-section {
-  width: 100vw;
-} */
-
-/* @media only screen and (min-width: 768px) {
-  .cv-heading:hover {
-    background-color: #ffbe0b;
-  }
-} */
-
 .cv-heading {
   margin-left: 3rem;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: -2px;
 }
 

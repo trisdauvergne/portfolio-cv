@@ -2,13 +2,15 @@ import React from 'react';
 import './connect.css';
 
 const Connect = () => {
+
   return (
     <section className="section">
-      <h1 className="heading">Connect</h1>
+      <h1 className="heading">Connect.</h1>
       <div className="connections">
-        <h2 className="sub-heading">LinkedIn</h2>
-        <h2 className="sub-heading">GitHub</h2>
-        <h2 className="sub-heading">Email</h2>
+        <a href="https://www.linkedin.com/in/tristandauvergne/" target="_blank" rel="noreferrer"><h2 className="connect-option">LinkedIn<span class="material-icons lrg-icon">arrow_right_alt</span></h2></a>
+        <a href="https://github.com/trisdauvergne" target="_blank" rel="noreferrer"><h2 className="connect-option">GitHub<span class="material-icons lrg-icon">arrow_right_alt</span></h2></a>
+        <a href="mailto:tristan.dauvergne@gmail.com"><h2 className="connect-option">Email<span class="material-icons lrg-icon">arrow_right_alt</span></h2></a>
+        
       </div>
     </section>
   )

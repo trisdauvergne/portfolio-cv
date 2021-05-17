@@ -7,6 +7,7 @@
   font-size: 4rem;
   font-weight: 300;
   align-self: flex-start;
+  line-height: 3rem;
 }
 
 .floating-btns {
@@ -20,6 +21,12 @@
   right: 0px;
   margin-right: 0.25rem;
   border: 3px dashed black;
+}
+
+.floating-btn:hover {
+  background-color: black;
+  color: #fffff4;
+  border: 3px dashed #fffff4;
 }
 
 .floating-btn--about {
@@ -53,6 +60,32 @@
     position: fixed;
     right: 0px;
     margin-right: 0.25rem;
-    border: 1px dashed black;
+    border: 2px dashed black;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .floating-btn {
+    font-size: 1.5rem;
+    padding: 0.25rem 0;
+  }
+
+  .floating-btn--about {
+    width: 7rem;
+  }
+  
+  .floating-btn--work {
+    top:60px;
+    width: 8.5rem;
+  }
+  
+  .floating-btn--cv {
+    top: 110px;
+    width: 4rem;
+  }
+  
+  .floating-btn--connect {
+    width: 8rem;
+  }
+
 }

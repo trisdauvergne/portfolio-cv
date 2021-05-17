@@ -26,7 +26,7 @@ const Cv = () => {
 
   return (
     <section className="section">
-      <h1 className="heading">CV</h1>
+      <h1 className="heading">CV.</h1>
       <h3 onClick={visibleEducationSection} className="cv-heading">Education & Training +</h3>
       {visibleEducation && <div>
         <h5>Full Stack JavaScript</h5>

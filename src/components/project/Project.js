@@ -7,19 +7,18 @@ const Project = ({ project }) => {
   console.log('in project.js', project);
 
   return (
-    <section className="section project-section">
+    <section className="project-section">
       <div className="project">
-        <h3 className="sub-heading">{project.projectTitle}</h3>
+        <h3 className="project-heading">{project.projectTitle}</h3>
         <div className="txt--centred project-content">
           <p>{project.projectDescription.projectDescription}</p>
-          {/* <p>{project.deployedLink}</p> */}
-          <h5 onClick={() => setToolsAndLanguagesVisible(!toolsAndLanguagesVisible)}>TOOLS AND LANGUAGES +</h5>
-          {toolsAndLanguagesVisible && <ul>
-            {project.toolsAndLanguages.map((item, index) => <li key={index}>{item}</li>)}
-          </ul>}
+          <h5 onMouseOut={() => setToolsAndLanguagesVisible(false)} onClick={() => setToolsAndLanguagesVisible(!toolsAndLanguagesVisible)}>TOOLS AND LANGUAGES +</h5>
+          {toolsAndLanguagesVisible && <>
+            {project.toolsAndLanguages.map((item, index) => <p key={index}>{item},</p>)}
+          </>}
           <div className="project-btns">
-            <button className="button deploy-btn"><a href={project.deployedLink} target="_blank" rel="noreferrer">Deployed project</a></button>
-            <button className="button source-btn"><a href={project.sourceCode} target="_blank" rel="noreferrer">Source code</a></button>
+            <button className="button project-btn deploy-btn"><a href={project.deployedLink} target="_blank" rel="noreferrer">Deployed project<span class="material-icons small-icon">arrow_right_alt</span></a></button>
+            <button className="button project-btn source-btn"><a href={project.sourceCode} target="_blank" rel="noreferrer">Source code<span class="material-icons small-icon">arrow_right_alt</span></a></button>
           </div>
         </div>
       </div>
