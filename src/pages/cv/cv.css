@@ -14,6 +14,16 @@
 } */
 
 .cv-heading {
-  font-style: italic;
-  margin-left: 2rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: -2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cv-heading {
+    font-size: 4.5rem;
+    font-weight: 300;
+  }
 }

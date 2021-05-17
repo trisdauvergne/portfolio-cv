@@ -51,8 +51,6 @@ button {
 .heading {
   font-weight: 500;
   font-size: 3rem;
-  /* margin-left: 1rem; */
-  /* font-style: italic; */
 }
 
 .sub-heading {
@@ -77,6 +75,7 @@ button {
   .sub-heading {
     font-size: 6rem;
     font-weight: 300;
+    text-align: center;
   }
 
   .txt--centred {

@@ -27,7 +27,7 @@ const Cv = () => {
   return (
     <section className="section">
       <h1 className="heading">CV</h1>
-      <h3 onClick={visibleEducationSection} className="heading cv-heading">Education & Training +</h3>
+      <h3 onClick={visibleEducationSection} className="cv-heading">Education & Training +</h3>
       {visibleEducation && <div>
         <h5>Full Stack JavaScript</h5>
         <p>School of Applied Technology</p>
@@ -42,7 +42,7 @@ const Cv = () => {
         <p>September 2004 - July 2007</p>
         <p>Designing for all aspects of live performance</p>
       </div>}
-      <h3 onClick={visibleWorkSection} className="heading cv-heading">Work Experience +</h3>
+      <h3 onClick={visibleWorkSection} className="cv-heading">Work Experience +</h3>
       {visibleWorkExperience && <div>
         <h5>Full Stack JavaScript Consultant</h5>
         <p>School of Applied Technology</p>
@@ -57,7 +57,7 @@ const Cv = () => {
         <p>January 2016 - July 2017</p>
         <p>Managed Shell’s online ‘Retail Brand Check Service’ ensuring the brand was represented consistently at retail sites around the world </p>
       </div>}
-      <h3 onClick={visibleTechnicalSection} className="heading cv-heading">Technical Skills +</h3>
+      <h3 onClick={visibleTechnicalSection} className="cv-heading">Technical Skills +</h3>
       {visibleTechnicalSkills && <div className="technical-skills">
         <p>General</p>
         <p>JavaScript</p>

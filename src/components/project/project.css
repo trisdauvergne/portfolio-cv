@@ -1,13 +1,10 @@
 .project-section {
   width: 100vw;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   margin-bottom: 1rem;
 }
 
 .project {
   margin: auto;
-  border: 1px solid red;
 }
 
 .project-content {
@@ -24,10 +21,13 @@
 }
 
 .deploy-btn {
+  border: 2px dashed black;
   max-width: 10rem;
+  margin-bottom: 1rem;
 }
 
 .source-btn {
+  border: 2px dashed black;
   max-width: 8rem;
 }
 
