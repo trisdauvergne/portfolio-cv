@@ -4,6 +4,7 @@ import './project.css';
 
 const Project = ({ project }) => {
   const [toolsAndLanguagesVisible, setToolsAndLanguagesVisible] = useState(false);
+  const [projectBodyVisible, setProjectBodyVisible] = useState(false);
   console.log('in project.js', project);
 
   return (
@@ -11,7 +12,12 @@ const Project = ({ project }) => {
       <div className="project">
         <h3 className="project-heading">{project.projectTitle}</h3>
         <div className="txt--centred project-content">
-          <p>{project.projectDescription.projectDescription}</p>
+          <p>{project.projectIntro}</p>
+          <h5 onClick={() => setProjectBodyVisible(!projectBodyVisible)} onMouseOut={() => setProjectBodyVisible(false)}>READ MORE +</h5>
+          {projectBodyVisible && <div>
+            <p>{project.projectBody.projectBody}</p>
+            <p>{project.projectCreative.projectCreative}</p>
+          </div>}
           <h5 onMouseOut={() => setToolsAndLanguagesVisible(false)} onClick={() => setToolsAndLanguagesVisible(!toolsAndLanguagesVisible)}>TOOLS AND LANGUAGES +</h5>
           {toolsAndLanguagesVisible && <>
             {project.toolsAndLanguages.map((item, index) => <p key={index}>{item},</p>)}

@@ -19,8 +19,12 @@ export const query = graphql`query MyQuery {
     edges {
       node {
         projectTitle
-        projectDescription {
-          projectDescription
+        projectIntro
+        projectBody {
+          projectBody
+        }
+        projectCreative {
+          projectCreative
         }
         toolsAndLanguages
         deployedLink
@@ -28,4 +32,5 @@ export const query = graphql`query MyQuery {
       }
     }
   }
-}`;
+}
+`;
