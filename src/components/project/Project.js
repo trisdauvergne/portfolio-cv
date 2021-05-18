@@ -4,7 +4,7 @@ import './project.css';
 const Project = ({ project }) => {
   const [toolsAndLanguagesVisible, setToolsAndLanguagesVisible] = useState(false);
   const [projectBodyVisible, setProjectBodyVisible] = useState(false);
-  console.log('in project.js', project);
+  // console.log('in project.js', project);
 
   return (
     <section className="project-section">
