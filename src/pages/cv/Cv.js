@@ -25,9 +25,9 @@ const Cv = () => {
   }
 
   return (
-    <section className="section">
+    <section id="cv" className="section">
       <h1 className="heading">CV.</h1>
-      <h3 onClick={visibleEducationSection} className="cv-heading">Education & Training +</h3>
+      <h3 onClick={visibleEducationSection} className="cv-heading custom-cursor">Education & Training +</h3>
       {visibleEducation && <div>
         <div className="cv-div">
           <div className="cv-txt">
@@ -51,7 +51,7 @@ const Cv = () => {
             </div>
         </div>
       </div>}
-      <h3 onClick={visibleWorkSection} className="cv-heading">Work Experience +</h3>
+      <h3 onClick={visibleWorkSection} className="cv-heading custom-cursor">Work Experience +</h3>
       {visibleWorkExperience && <div>
         <div className="cv-div">
           <div className="cv-txt">
@@ -75,7 +75,7 @@ const Cv = () => {
           </div>
         </div>
       </div>}
-      <h3 onClick={visibleTechnicalSection} className="cv-heading">Technical Skills +</h3>
+      <h3 onClick={visibleTechnicalSection} className="cv-heading custom-cursor">Technical Skills +</h3>
       {visibleTechnicalSkills &&<div className="cv-div">
         <div className="cv-txt">
           <p className="cv-sub-heading">General</p>

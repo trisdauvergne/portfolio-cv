@@ -4,7 +4,7 @@ import Main from './main/Main';
 import './newcss.css';
 
 const IndexPage = ({ data }) => {
-  console.log('from index.js', data.allContentfulProject.edges)
+  // console.log('from index.js', data.allContentfulProject.edges)
   return (
   <div className="App">
     <Main projects={data.allContentfulProject.edges}/>
@@ -19,8 +19,12 @@ export const query = graphql`query MyQuery {
     edges {
       node {
         projectTitle
-        projectDescription {
-          projectDescription
+        projectIntro
+        projectBody {
+          projectBody
+        }
+        projectCreative {
+          projectCreative
         }
         toolsAndLanguages
         deployedLink
@@ -28,4 +32,5 @@ export const query = graphql`query MyQuery {
       }
     }
   }
-}`;
+}
+`;

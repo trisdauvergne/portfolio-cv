@@ -36,6 +36,7 @@
   .connect-option {
     font-size: 4.25rem;
     font-weight: 300;
+    margin-left: 0;
   }
 
   .connect-option--linkedin {

@@ -4,7 +4,7 @@ import './connect.css';
 const Connect = () => {
 
   return (
-    <section className="section">
+    <section id="connect" className="section">
       <h1 className="heading">Connect.</h1>
       <div className="connections">
         <a href="https://www.linkedin.com/in/tristandauvergne/" target="_blank" rel="noreferrer"><h2 className="connect-option connect-option--linkedin">LinkedIn<span class="material-icons lrg-icon">arrow_right_alt</span></h2></a>
