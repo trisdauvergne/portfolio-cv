@@ -39,6 +39,15 @@
   border: 3px dashed #fffff4;
 }
 
+/* .project-preview {
+  width: 250px;
+}
+
+.project-preview:hover {
+  width: 500px;
+  z-index: 100;
+} */
+
 .deploy-btn {
   width: 11.5rem;
   margin-bottom: 1rem;
