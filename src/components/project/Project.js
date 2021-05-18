@@ -5,7 +5,7 @@ import './project.css';
 const Project = ({ project }) => {
   const [toolsAndLanguagesVisible, setToolsAndLanguagesVisible] = useState(false);
   const [projectBodyVisible, setProjectBodyVisible] = useState(false);
-  console.log('in project.js', project);
+  // console.log('in project.js', project);
 
   return (
     <section className="project-section">
@@ -13,14 +13,14 @@ const Project = ({ project }) => {
         <h3 className="project-heading">{project.projectTitle}</h3>
         <div className="txt--centred project-content">
           <p>{project.projectIntro}</p>
-          <h5 onClick={() => setProjectBodyVisible(!projectBodyVisible)} onMouseOut={() => setProjectBodyVisible(false)}>READ MORE +</h5>
+          <h5 className="custom-cursor" onClick={() => setProjectBodyVisible(!projectBodyVisible)} onMouseOut={() => setProjectBodyVisible(false)}>READ MORE +</h5>
           {projectBodyVisible && <div>
             <p>{project.projectBody.projectBody}</p>
             <p>{project.projectCreative.projectCreative}</p>
           </div>}
-          <h5 onMouseOut={() => setToolsAndLanguagesVisible(false)} onClick={() => setToolsAndLanguagesVisible(!toolsAndLanguagesVisible)}>TOOLS AND LANGUAGES +</h5>
+          <h5 className="custom-cursor" onMouseOut={() => setToolsAndLanguagesVisible(false)} onClick={() => setToolsAndLanguagesVisible(!toolsAndLanguagesVisible)}>TOOLS AND LANGUAGES +</h5>
           {toolsAndLanguagesVisible && <>
-            {project.toolsAndLanguages.map((item, index) => <p key={index}>{item},</p>)}
+            <p>{project.toolsAndLanguages.join(', ')}</p>
           </>}
           <div className="project-btns">
             <button className="button project-btn deploy-btn"><a href={project.deployedLink} target="_blank" rel="noreferrer">Deployed project<span class="material-icons small-icon">arrow_right_alt</span></a></button>
