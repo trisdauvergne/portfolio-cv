@@ -23,8 +23,8 @@ const Project = ({ project }) => {
             <p>{project.toolsAndLanguages.join(', ')}</p>
           </div>}
           <div className="project-btns">
-            <button className="button project-btn deploy-btn"><a href={project.deployedLink} target="_blank" rel="noreferrer">Deployed project<span class="material-icons small-icon">arrow_right_alt</span></a></button>
-            <button className="button project-btn source-btn"><a href={project.sourceCode} target="_blank" rel="noreferrer">Source code<span class="material-icons small-icon">arrow_right_alt</span></a></button>
+            <a href={project.deployedLink} target="_blank" rel="noreferrer"><button className="button project-btn deploy-btn">Deployed project<span class="material-icons small-icon">arrow_right_alt</span></button></a>
+            <a href={project.sourceCode} target="_blank" rel="noreferrer"><button className="button project-btn source-btn">Source code<span class="material-icons small-icon">arrow_right_alt</span></button></a>
           </div>
         </div>
       </div>

@@ -1,64 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
-/* font-family: 'Ubuntu Mono', monospace; */
-/* font-family: 'Tomorrow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-/* 
-yellow: ffbe0b
-orange: fb5607
-pink: ff006e
-purple: 8338ec
-blue: 3a86ff
-*/
+/* font-family: 'Chivo', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+/* font-family: 'Yantramanav', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Gothic A1', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+/* font-family: 'Almarai', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* font-family: 'Manrope', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* font-family: 'Arvo', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* font-family: 'IBM Plex Mono', monospace; */
 * {
   margin: 0;
   padding: 0;
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: left; */
+body {
+  background-color: #fffff4;
 }
 
-h1, h2, h3, h5 {
-  font-family: 'Tomorrow', sans-serif;
+h1, h3, button {
+  font-family: 'Chivo', sans-serif;
 }
 
-.heading-div {
-  height: 20vh;
-  border-bottom: 1px solid black;
-}
-
-.heading-div__reduced {
-  height: 10vh;
-}
-
-.heading {
-  /* padding-top: 6vh; */
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
-.sub-heading {
+p {
+  font-family: 'Almarai', sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  /* text-align: justify; */
 }
 
-.strong-text {
-  font-weight: 700;
-}
-
-p, a {
-  font-family: 'Ubuntu Mono', monospace;
+button {
+  background-color: #fffff4;
+  border-radius: 20px;
 }
 
 a {
-  font-weight: 700;
+  text-decoration: none;
   color: black;
 }
 
-.bottom-border {
-  border-bottom: 1px solid black;
+a:hover {
+  color: #fffff4;
 }
+
+.material-icons {
+  font-family: 'Material Icons';
+  vertical-align: middle;
+}
+
+.lrg-icon {
+  font-size: 2.5rem;
+}
+
+.small-icon {
+  font-size: 1.25rem;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.section {
+  margin-top: 6rem;
+}
+
+.custom-cursor {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .txt--centred {
+    margin: auto;
+  }
+}
+
