@@ -5,9 +5,9 @@
 
 .header__txt {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 400;
   align-self: flex-start;
-  /* line-height: 3rem; */
+  margin-bottom: 0;
 }
 
 .floating-btns {
