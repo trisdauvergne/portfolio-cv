@@ -7,7 +7,7 @@
   font-size: 4rem;
   font-weight: 300;
   align-self: flex-start;
-  line-height: 3rem;
+  /* line-height: 3rem; */
 }
 
 .floating-btns {
@@ -51,6 +51,12 @@
   transform: rotate(90deg);
 }
 
+@media only screen and (max-width: 425px) {
+  .header__txt {
+    line-height: 6rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .floating-btns {
     display: flex;
@@ -72,6 +78,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .header__txt {
+    line-height: 4.5rem;
+  }
+
   .floating-btn {
     font-size: 1.5rem;
     padding: 0.25rem 0;

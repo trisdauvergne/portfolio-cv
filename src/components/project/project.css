@@ -37,6 +37,7 @@
 .project-btn:hover {
   background-color: black;
   border: 3px dashed #fffff4;
+  color: #fffff4;
 }
 
 /* .project-preview {

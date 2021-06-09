@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Main from './main/Main';
-import './newcss.css';
+import './index.css';
 
 const IndexPage = ({ data }) => {
   // console.log('from index.js', data.allContentfulProject.edges)
