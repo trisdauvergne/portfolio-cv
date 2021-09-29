@@ -16,7 +16,6 @@
 }
 
 .project-content {
-  /* margin: auto; */
   display: flex;
   flex-direction: column;
   margin: 0 1rem 0 2rem;
@@ -34,30 +33,9 @@
   padding: 0.4rem 0.5rem;
 }
 
-.project-btn:hover {
-  /* background-color: black; */
-  /* border: 3px dashed #fffff4; */
-  /* color: #fffff4; */
-  box-shadow: 6px 6px black;
-}
-
 .project-btn:focus {
   outline: none;
 }
-
-.project-btn:active {
-  box-shadow: 4px 4px black;
-  transform: translateY(2px);
-}
-
-/* .project-preview {
-  width: 250px;
-}
-
-.project-preview:hover {
-  width: 500px;
-  z-index: 100;
-} */
 
 .deploy-btn {
   width: 11.5rem;
