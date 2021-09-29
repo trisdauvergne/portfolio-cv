@@ -1,20 +1,19 @@
 .cv-heading {
-  /* margin-left: 2rem; */
   text-transform: uppercase;
   font-weight: 300;
   font-size: 3rem;
   letter-spacing: -6px;
 }
 
+.cv-div {
+  width: 100vw;
+  border-bottom: 1px solid black;
+}
+
 .cv-txt {
   max-width: 425px;
   line-height: 1rem;
   margin: 2rem 0.5rem 3rem 1rem;
-}
-
-.cv-div {
-  width: 100vw;
-  border-bottom: 1px solid black;
 }
 
 .cv-sub-heading {

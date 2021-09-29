@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './cv.css';
+import { motion } from 'framer-motion';
 
 const Cv = () => {
   const [visibleEducation, setVisibleEducation] = useState(false);
@@ -27,8 +28,23 @@ const Cv = () => {
   return (
     <section id="cv" className="section">
       <h1 className="heading">CV.</h1>
-      <h3 onClick={visibleEducationSection} className="cv-heading custom-cursor">Education & Training +</h3>
-      {visibleEducation && <div>
+      <motion.h3
+      onClick={visibleEducationSection}
+      className="cv-heading custom-cursor"
+      whileHover={{
+        textShadow: "6px 6px #000000"
+      }}
+      whileTap={{
+        color: "#fffff4",
+        transition: {
+          duration: 0.1,
+        }
+      }}>{visibleEducation ? `Education & Training -` : `Education & Training +`}
+      </motion.h3>
+      {visibleEducation &&
+      <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}>
         <div className="cv-div">
           <div className="cv-txt">
             <h3 className="cv-sub-heading">Full Stack JavaScript</h3>
@@ -50,9 +66,25 @@ const Cv = () => {
             <p className="cv-copy">Designing for all aspects of live performance</p>
             </div>
         </div>
-      </div>}
-      <h3 onClick={visibleWorkSection} className="cv-heading custom-cursor">Work Experience +</h3>
-      {visibleWorkExperience && <div>
+      </motion.div>}
+      <motion.h3
+      onClick={visibleWorkSection}
+      className="cv-heading custom-cursor"
+      whileHover={{
+        textShadow: "6px 6px #000000"
+      }}
+      whileTap={{
+        color: "#fffff4",
+        transition: {
+          duration: 0.1,
+        }
+      }}>
+        {visibleWorkExperience ? 'Work Experience -' : 'Work Experience +'}
+      </motion.h3>
+      {visibleWorkExperience &&
+      <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}>
         <div className="cv-div">
           <div className="cv-txt">
             <h3 className="cv-sub-heading">Full Stack JavaScript Consultant</h3>
@@ -74,9 +106,26 @@ const Cv = () => {
             <p className="cv-copy">Managed Shell’s online ‘Retail Brand Check Service’ ensuring the brand was represented consistently at retail sites around the world </p>
           </div>
         </div>
-      </div>}
-      <h3 onClick={visibleTechnicalSection} className="cv-heading custom-cursor">Technical Skills +</h3>
-      {visibleTechnicalSkills &&<div className="cv-div">
+      </motion.div>}
+      <motion.h3
+      onClick={visibleTechnicalSection}
+      className="cv-heading custom-cursor"
+      whileHover={{
+        textShadow: "6px 6px #000000"
+      }}
+      whileTap={{
+        color: "#fffff4",
+        transition: {
+          duration: 0.1,
+        }
+      }}>
+        {visibleTechnicalSkills ? 'Technical Skills -' : 'Technical Skills +'}
+      </motion.h3>
+      {visibleTechnicalSkills && 
+      <motion.div
+      className="cv-div"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}>
         <div className="cv-txt">
           <p className="cv-sub-heading">General</p>
           <p className="cv-copy">JavaScript</p>
@@ -93,7 +142,7 @@ const Cv = () => {
           <p className="cv-sub-heading">Tools and technologies</p>
           <p className="cv-copy">Visual Studio Code, Handlebars / Mustache, Mocha / Jest, Docker, Git + GitHub, AWS, Cloud Platforms (MongoDB Atlas, ElephantSQL, Netlify, Heroku, Contentful), TDD,Agile Work Methods</p>
         </div>
-      </div>}
+      </motion.div>}
     </section>
   )
 }
