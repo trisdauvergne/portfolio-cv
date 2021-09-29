@@ -30,14 +30,24 @@
 }
 
 .project-btn {
-  border: 3px dashed black;
+  border: 2px dashed black;
   padding: 0.4rem 0.5rem;
 }
 
 .project-btn:hover {
-  background-color: black;
-  border: 3px dashed #fffff4;
-  color: #fffff4;
+  /* background-color: black; */
+  /* border: 3px dashed #fffff4; */
+  /* color: #fffff4; */
+  box-shadow: 6px 6px black;
+}
+
+.project-btn:focus {
+  outline: none;
+}
+
+.project-btn:active {
+  box-shadow: 4px 4px black;
+  transform: translateY(2px);
 }
 
 /* .project-preview {
