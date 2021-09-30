@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './project.css';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer'; // to control the start of the animation 
 
 const Project = ({ project }) => {
   const [toolsAndLanguagesVisible, setToolsAndLanguagesVisible] = useState(false);
@@ -15,11 +16,38 @@ const Project = ({ project }) => {
   const viewToolsCloseBody = () => {
     setToolsAndLanguagesVisible(!toolsAndLanguagesVisible);
     setProjectBodyVisible(false);
-  }
+  };
+
+  const projectDivVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1  
+      }
+    }
+  };
+
+  const controls = useAnimation(); // hook to control the start of animation
+  const { ref, inView } = useInView(); // ref and inview properties
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
 
   return (
     <section className="project-section">
-      <div className="project">
+      <motion.div
+      className="project"
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={projectDivVariants}>
         <h3 className="project-heading">{project.projectTitle}</h3>
         <div className="txt--centred project-content">
           <p>{project.projectIntro}</p>
@@ -63,7 +91,7 @@ const Project = ({ project }) => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
