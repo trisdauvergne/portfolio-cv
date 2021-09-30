@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
       <Main projects={data.allContentfulProject.edges}/>
     </div>
   )
-}
+};
 
 export default IndexPage;
 
