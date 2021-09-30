@@ -20,9 +20,11 @@ const Header = () => {
   const btn = {
     hidden: {
       opacity: 0,
+      // scale: 1.5,
     },
     visible: {
       opacity: 1,
+      // scale: 1,
     }
   };
 
@@ -39,6 +41,15 @@ const Header = () => {
           <motion.button
             className="floating-btn floating-btn--about custom-cursor"
             variants={btn}
+            whileHover={{
+              backgroundColor: "#000000",
+              color: "#fffff4",
+              border: "2px dashed #fffff4",
+              transition: {
+                stiffness: 100,
+                duration: 0.2
+              }
+            }}
           >
             About
           </motion.button>
@@ -47,6 +58,15 @@ const Header = () => {
           <motion.button
             className="floating-btn floating-btn--work custom-cursor"
             variants={btn}
+            whileHover={{
+              backgroundColor: "#000000",
+              color: "#fffff4",
+              border: "2px dashed #fffff4",
+              transition: {
+                stiffness: 100,
+                duration: 0.2
+              }
+            }}
           >
             Projects
           </motion.button>
@@ -55,6 +75,15 @@ const Header = () => {
           <motion.button
             className="floating-btn floating-btn--cv custom-cursor"
             variants={btn}
+            whileHover={{
+              backgroundColor: "#000000",
+              color: "#fffff4",
+              border: "2px dashed #fffff4",
+              transition: {
+                stiffness: 100,
+                duration: 0.2
+              }
+            }}
           >
             CV
           </motion.button>
@@ -63,6 +92,15 @@ const Header = () => {
           <motion.button
             className="floating-btn floating-btn--connect custom-cursor"
             variants={btn}
+            whileHover={{
+              backgroundColor: "#000000",
+              color: "#fffff4",
+              border: "2px dashed #fffff4",
+              transition: {
+                stiffness: 100,
+                duration: 0.2
+              }
+            }}
           >Connect
           </motion.button>
         </Link>

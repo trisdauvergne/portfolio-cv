@@ -54,9 +54,9 @@ a {
   color: black;
 }
 
-a:hover {
+/* a:hover {
   color: #fffff4;
-}
+} */
 
 .material-icons {
   font-family: 'Material Icons';
