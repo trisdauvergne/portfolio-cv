@@ -20,13 +20,7 @@
   position: fixed;
   right: 0px;
   margin-right: 0.25rem;
-  border: 1px solid black;
-}
-
-.floating-btn:hover {
-  background-color: black;
-  color: #fffff4;
-  border: 1px solid #fffff4;
+  border: 2px solid black;
 }
 
 .floating-btn--about {

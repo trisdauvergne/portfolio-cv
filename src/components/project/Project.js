@@ -112,17 +112,18 @@ const Project = ({ project }) => {
             target="_blank"
             rel="noreferrer">
               <motion.button
-              className="custom-cursor button project-btn source-btn"
-              whileHover={{
-                boxShadow: "6px 6px #000000",
-                x: -7,
-                y: -7
-              }}
-              whileTap={{
-                boxShadow: "0px 0px #000000",
-                x: 0,
-                y: 0
-              }}>
+                className="custom-cursor button project-btn source-btn"
+                whileHover={{
+                  boxShadow: "6px 6px #000000",
+                  x: -7,
+                  y: -7
+                }}
+                whileTap={{
+                  boxShadow: "0px 0px #000000",
+                  x: 0,
+                  y: 0
+                }}
+              >
                 Source code<span className="material-icons small-icon">arrow_right_alt</span>
               </motion.button>
             </a>
