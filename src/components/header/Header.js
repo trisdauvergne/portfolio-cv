@@ -20,11 +20,9 @@ const Header = () => {
   const btn = {
     hidden: {
       opacity: 0,
-      // scale: 1.5,
     },
     visible: {
       opacity: 1,
-      // scale: 1,
     }
   };
 
@@ -44,10 +42,10 @@ const Header = () => {
             whileHover={{
               backgroundColor: "#000000",
               color: "#fffff4",
-              border: "2px dashed #fffff4",
+              border: "1px dashed #fffff4",
               transition: {
                 stiffness: 100,
-                duration: 0.2
+                duration: 0.1
               }
             }}
           >
@@ -61,10 +59,10 @@ const Header = () => {
             whileHover={{
               backgroundColor: "#000000",
               color: "#fffff4",
-              border: "2px dashed #fffff4",
+              border: "1px dashed #fffff4",
               transition: {
                 stiffness: 100,
-                duration: 0.2
+                duration: 0.1
               }
             }}
           >
@@ -78,10 +76,10 @@ const Header = () => {
             whileHover={{
               backgroundColor: "#000000",
               color: "#fffff4",
-              border: "2px dashed #fffff4",
+              border: "1px dashed #fffff4",
               transition: {
                 stiffness: 100,
-                duration: 0.2
+                duration: 0.1
               }
             }}
           >
@@ -95,10 +93,10 @@ const Header = () => {
             whileHover={{
               backgroundColor: "#000000",
               color: "#fffff4",
-              border: "2px dashed #fffff4",
+              border: "1px dashed #fffff4",
               transition: {
                 stiffness: 100,
-                duration: 0.2
+                duration: 0.1
               }
             }}
           >Connect
