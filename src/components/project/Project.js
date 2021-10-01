@@ -45,11 +45,12 @@ const Project = ({ project }) => {
   return (
     <section className="project-section">
       <motion.div
-      className="project"
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={projectDivVariants}>
+        className="project"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={projectDivVariants}
+      >
         <h3 className="project-heading">{project.projectTitle}</h3>
         <div className="txt--centred project-content">
           <p>{project.projectIntro}</p>
@@ -61,8 +62,13 @@ const Project = ({ project }) => {
           </h5>
           {projectBodyVisible &&
           <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}>
+            initial={{
+              opacity: 0
+            }}
+            animate={{
+              opacity: 1
+            }}
+          >
             <p>{project.projectBody.projectBody}</p>
             <p>{project.projectCreative.projectCreative}</p>
             <h5
@@ -78,8 +84,13 @@ const Project = ({ project }) => {
           </h5>
           {toolsAndLanguagesVisible &&
           <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}>
+            initial={{
+              opacity: 0
+            }}
+            animate={{
+              opacity: 1
+            }}
+          >
             <p>{project.toolsAndLanguages.join(', ')}</p>
             <h5
             className="custom-cursor"
@@ -93,17 +104,18 @@ const Project = ({ project }) => {
             target="_blank"
             rel="noreferrer">
               <motion.button
-              className="custom-cursor button project-btn deploy-btn"
-              whileHover={{
-                boxShadow: "6px 6px #000000",
-                x: -7,
-                y: -7
-              }}
-              whileTap={{
-                boxShadow: "0px 0px #000000",
-                x: 0,
-                y: 0
-              }}>
+                className="custom-cursor button project-btn deploy-btn"
+                whileHover={{
+                  boxShadow: "6px 6px #000000",
+                  x: -7,
+                  y: -7
+                }}
+                whileTap={{
+                  boxShadow: "0px 0px #000000",
+                  x: 0,
+                  y: 0
+                }}
+              >
                 Deployed project<span className="material-icons small-icon">arrow_right_alt</span>
               </motion.button>
             </a>

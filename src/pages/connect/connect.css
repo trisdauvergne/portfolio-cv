@@ -12,10 +12,10 @@
   border-radius: 50px;
 }
 
-.connect-option:hover {
+/* .connect-option:hover {
   background-color: black;
   border: 3px dashed #fffff4;
-}
+} */
 
 .connect-option--linkedin {
   text-align: center;
