@@ -75,6 +75,7 @@ const Project = ({ project }) => {
               src={`https:${project.mainPagePreview.file.url}`}
               whileHover={{
                 scale: 1.5,
+                border: '1px dashed #000000',
                 transition: {
                   type: 'spring',
                   stiffness: 60,
