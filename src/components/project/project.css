@@ -22,6 +22,10 @@
   line-height: 1rem;
 }
 
+.project-preview {
+  border: 1px solid black;
+}
+
 .project-btns {
   display: flex;
   flex-direction: column;
