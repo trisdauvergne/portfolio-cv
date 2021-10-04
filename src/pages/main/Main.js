@@ -7,7 +7,6 @@ import Connect from '../connect/Connect';
 import './main.css';
 
 const Main = ({ projects }) => {
-  // console.log('from main.js', projects);
   return (
     <div>
       <Header />

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './project.css';
 import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer'; // to control the start of the animation 
+import { useInView } from 'react-intersection-observer';
 
 const Project = ({ project }) => {
   const [toolsAndLanguagesVisible, setToolsAndLanguagesVisible] = useState(false);
   const [projectBodyVisible, setProjectBodyVisible] = useState(false);
   // console.log('in project.js', project);
+  // console.log(`Testing this out ${project}`)
 
   const viewBodyCloseTools = () => {
     setProjectBodyVisible(!projectBodyVisible);
@@ -18,8 +19,8 @@ const Project = ({ project }) => {
     setProjectBodyVisible(false);
   };
 
-  const controls = useAnimation(); // hook to control the start of animation
-  const { ref, inView } = useInView(); // ref and inview properties
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
 
   const projectDivVariants = {
     hidden: {
@@ -54,10 +55,10 @@ const Project = ({ project }) => {
         <h3 className="project-heading">{project.projectTitle}</h3>
         <div className="txt--centred project-content">
           <p>{project.projectIntro}</p>
-          {/* <img className="project-preview" src={project.mainPagePreview.file.url}/> */}
           <h5
-          className="custom-cursor"
-          onClick={() => viewBodyCloseTools()}>
+            className="custom-cursor"
+            onClick={() => viewBodyCloseTools()}
+          >
           {projectBodyVisible ? `ABOUT ${project.projectTitle.toUpperCase()} -`:'READ MORE +'}
           </h5>
           {projectBodyVisible &&
@@ -69,11 +70,23 @@ const Project = ({ project }) => {
               opacity: 1
             }}
           >
+            <motion.img
+              className="project-preview"
+              src={`https:${project.mainPagePreview.file.url}`}
+              whileHover={{
+                scale: 1.5,
+                transition: {
+                  type: 'spring',
+                  stiffness: 60,
+                }
+              }}
+            />
             <p>{project.projectBody.projectBody}</p>
             <p>{project.projectCreative.projectCreative}</p>
             <h5
-            className="custom-cursor"
-            onClick={() => setProjectBodyVisible(false)}>
+              className="custom-cursor"
+              onClick={() => setProjectBodyVisible(false)}
+            >
               HIDE -
             </h5>
           </motion.div>}
