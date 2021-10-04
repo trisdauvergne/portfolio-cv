@@ -1,9 +1,16 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { Link } from 'react-scroll';
 import './header.css';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Header = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    "threshold": 0,
+    "triggerOnce": true,
+  });
+
   const headerBtnVariants = {
     hidden: {
       opacity: 0,
@@ -26,14 +33,29 @@ const Header = () => {
     }
   };
 
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
   return (
     <section className="header">
-      <motion.h1 className="header__txt">TRISTAN DAUVERGNE</motion.h1>
+      <motion.h1
+        className="header__txt"
+        id="heading"
+      >
+        TRISTAN DAUVERGNE
+      </motion.h1>
       <motion.div
         className="floating-btns"
+        ref={ref}
+        animate={controls}
         variants={headerBtnVariants}
         initial="hidden"
-        animate="visible"
       >
         <Link to="about" smooth={true} duration={1000}>
           <motion.button

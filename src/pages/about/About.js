@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './about.css';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 
 const About = () => {
+  const controls = useAnimation(); // hook to control the start of animation
+  const { ref, inView } = useInView(); // ref and inview properties
+
   const aboutSectionVariants = {
     hidden: {
       opacity: 0,
@@ -25,13 +30,24 @@ const About = () => {
     }
   }
 
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
   return (
     <section id="about" className="section about-section">
       <h3 className="heading about__heading">About me.</h3>
       <motion.div
         variants={aboutSectionVariants}
         initial="hidden"
-        animate="visible"
+        // animate="visible"
+        ref={ref}
+        animate={controls}
       >
         <motion.p
           className="txt--centred about__txt"
