@@ -5,7 +5,10 @@ import { useInView } from 'react-intersection-observer'; // to control the start
 
 const Connect = () => {
   const controls = useAnimation(); // hook to control the start of animation
-  const { ref, inView } = useInView(); // ref and inview properties
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true
+  }); // ref and inview properties
 
   const connectDivVariants = {
     hidden: {

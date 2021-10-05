@@ -6,7 +6,10 @@ import { useInView } from 'react-intersection-observer';
 
 const About = () => {
   const controls = useAnimation(); // hook to control the start of animation
-  const { ref, inView } = useInView(); // ref and inview properties
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  }); // ref and inview properties
 
   const aboutSectionVariants = {
     hidden: {
